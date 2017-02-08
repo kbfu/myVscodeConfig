@@ -1,0 +1,10 @@
+{
+    "python.pythonPath": "${workspaceRoot}/venv/bin/python",
+    "editor.renderIndentGuides": true,
+    "python.linting.pep8Enabled": true,
+    "editor.formatOnType": true,
+    "editor.formatOnSave": true,
+    "workbench.sideBar.location": "left",
+    "python.autoComplete.addBrackets": true,
+    "window.zoomLevel": 0
+}

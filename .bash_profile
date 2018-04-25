@@ -46,8 +46,6 @@ function parse_git_dirty {
         fi
 }
 
-export VIRTUAL_ENV_DISABLE_PROMPT=1
-
 pyenv_python_version(){
     result=""
     if hash pyenv 2>/dev/null; then
@@ -56,7 +54,7 @@ pyenv_python_version(){
             result="$pyenv_version";
         fi
     fi
-    [[ -n "$result" ]] && echo "($result) "
+    [[ -n "$result" ]] && echo "🐍<$result> "
 }
 
 export PS1="\$(pyenv_python_version)\[\e[33m\]\u\[\e[m\]@\h [\W\[\e[31m\]\`parse_git_branch\`\[\e[m\]] \[\e[36m\]✗\[\e[m\] "
